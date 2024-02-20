@@ -11,7 +11,7 @@ class TwistPublisher(Node):
     def __init__(self):
         super().__init__('twist_publisher')
         self.publisher = self.create_publisher(Twist, 'speed_in', 10)
-        timer_period = 1  # seconds
+        timer_period = 1 # seconds
         self.timer = self.create_timer(timer_period, self.publish_twist)
         self.linear_velocity = 0.0
         self.angular_velocity = 0.0

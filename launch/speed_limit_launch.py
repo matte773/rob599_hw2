@@ -17,7 +17,9 @@ def generate_launch_description():
             output='screen',
             parameters=[
                 {'linear_max': 10.0},  # Adjust the parameter values as needed
-                {'angular_max': 10.0}
+                {'angular_max': 10.0},
+                {'with_watchdog': True},
+                {'watchdog_period': 7.0}
             ]
         ),
 
